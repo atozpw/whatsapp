@@ -15,7 +15,7 @@ class ApiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/whatsapp.php' => config_path('config/whatsapp.php'),
+            __DIR__.'/config/whatsapp.php' => config_path('whatsapp.php'),
         ]);
     }
 
