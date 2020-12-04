@@ -1,0 +1,28 @@
+{
+    "name": "atozpw/whatsapp",
+    "description": "Whatsapp for Onyx Berry",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asep Suprapto",
+            "email": "asepsuprapto.id@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Atozpw\\Whatsapp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Atozpw\\Whatsapp\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "Whatsapp": "Atozpw\\Whatsapp\\ApiFacade"
+            }
+        }
+    }
+}
